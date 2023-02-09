@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/encontrarvagas.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="findjobs">
         <header>
             <nav>
                 <div class="nav-container">
                     <a href="index.html">
-                        <img id="logo" src="./assets/img/logo.png" alt="Jobfinder">
+                        <img id="logo" src="/assets/img/logo.png" alt="Jobfinder">
                     </a>
                     <i class="fas fa-bars btn-menumobile"></i>
                     <ul>
@@ -25,11 +25,12 @@
                     </ul>
                 </div>
             </nav>
-            <div id="main-banner">
+        </header>
+        <main id="lastjobs-container" class="wrapper">
+            <h1>Busque a sua vaga</h1>
+            <div id="job-filter">
                 <div id="search-form">
-                    <h1>A maneira mais fácil de encontrar seu novo emprego</h1>
-                    <p>Conecte-se de forma gratuita as melhores empresas e consiga o emprego dos seus sonhos.</p>
-                    <form>
+                    <form action="">
                         <input type="text" name="job" id="" placeholder="Digite o cargo">
                         <select name="region" id="">
                             <option value="">Todos os estados</option>
@@ -41,14 +42,27 @@
                     </form>
                 </div>
             </div>
-        </header>
-        <main id="lastjobs-container" class="wrapper">
-            <h1>Ultimas vagas enviadas</h1>
+            <div id="type-filter">
+                <ul>
+                    <li>
+                        <input type="checkbox" checked name="" id=""><label for="">CLT</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked name="" id=""><label for="">Home Office</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked name="" id=""><label for="">PJ</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked name="" id=""><label for="">Free Lancer</label>
+                    </li>
+                </ul>
+            </div>
             <ul>
                 <li>
                     <a href="#" class="clickarea">
                         <div class="company-box">
-                            <img src="./assets/img/googlelogo.png" alt="">
+                            <img src="/assets/img/googlelogo.png" alt="">
                             <div class="company-info">
                                 <h3>Developer</h3>
                                 <p>Google</p>
@@ -66,7 +80,7 @@
                 <li>
                     <a href="#" class="clickarea">
                         <div class="company-box">
-                            <img src="./assets/img/ibmlogo.png" alt="">
+                            <img src="/assets/img/ibmlogo.png" alt="">
                             <div class="company-info">
                                 <h3>DBA</h3>
                                 <p>IBM</p>
@@ -84,7 +98,7 @@
                 <li>
                     <a href="#" class="clickarea">
                         <div class="company-box">
-                            <img src="./assets/img/linkedinlogo.png" alt="">
+                            <img src="/assets/img/linkedinlogo.png" alt="">
                             <div class="company-info">
                                 <h3>Front End Developer</h3>
                                 <p>Linkedin</p>
@@ -102,7 +116,7 @@
                 <li>
                     <a href="#" class="clickarea">
                         <div class="company-box">
-                            <img src="./assets/img/facebooklogo.png" alt="">
+                            <img src="/assets/img/facebooklogo.png" alt="">
                             <div class="company-info">
                                 <h3>Full Stack Developer</h3>
                                 <p>Facebook</p>
@@ -119,113 +133,14 @@
                 </li>
             </ul>
             <div class="btnjobs-container">
-                <a href="#" class="btn-jobs">Ver mais vagas</a>
+                <a href="#" class="btn-jobs">Carregar vagas</a>
             </div>
         </main>
-        <section id="sendjobs-container">
-            <div id="sendjobs-inner" class="wrapper">
-                <h2>Envie uma vaga que será vista por milhares de candidatos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iure eveniet accusantium sit velit voluptatum eum sunt tenetur.
-                    Consequatur quisquam dolorum libero provident quaerat sed corrupti
-                    laboriosam voluptates distinctio a! Deleniti?</p>
-                <a href="#" class="light-btn">Enviar vaga</a>
-            </div>
-        </section>
-        <section id="status-container" class="wrapper">
-            <h2 class="title-center">Estatísticas do Jobfinder</h2>
-            <p class="p-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Iure eveniet accusantium sit velit voluptatum eum sunt tenetur.
-                Consequatur quisquam dolorum libero provident quaerat sed corrupti
-                laboriosam voluptates distinctio a! Deleniti?</p>
-            <div>
-                <div class="status-box">
-                    <span class="status-qtd">150</span>
-                    <p class="status-text">Vagas abertas</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">250</span>
-                    <p class="status-text">Recrutamento e seleção</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">50</span>
-                    <p class="status-text">Empresas participantes</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">550</span>
-                    <p class="status-text">Banco de talentos</p>
-                </div>
-            </div>
-        </section>
-        <section id="testmony-container">
-            <div class="wrapper">
-                <h2>Veja o que os candidatos dizem</h2>
-                <p class="p-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iure eveniet accusantium sit velit voluptatum eum sunt tenetur.
-                    Consequatur quisquam dolorum libero provident quaerat sed corrupti
-                    laboriosam voluptates distinctio a! Deleniti?</p>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Iure eveniet accusantium sit velit voluptatum eum sunt tenetur.</p>
-                    <img src="./assets/img/avatar1.png" alt="usuario1">
-                    <p class="testmony-name">Pedro</p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Iure eveniet accusantium sit velit voluptatum eum sunt tenetur.</p>
-                    <img src="./assets/img/avatar2.png" alt="usuario2">
-                    <p class="testmony-name">Maria</p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Iure eveniet accusantium sit velit voluptatum eum sunt tenetur.</p>
-                    <img src="./assets/img/avatar3.png" alt="usuario3">
-                    <p class="testmony-name">João</p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Iure eveniet accusantium sit velit voluptatum eum sunt tenetur.</p>
-                    <img src="./assets/img/avatar4.png" alt="usuario4">
-                    <p class="testmony-name">Karollyne</p>
-                </div>
-            </div>
-        </section>
-        <section id="blog-container" class="wrapper">
-            <h2 class="title-center">Últimos artigos do nosso blog</h2>
-            <p class="p-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Iure eveniet accusantium sit velit voluptatum eum sunt tenetur.
-                Consequatur quisquam dolorum libero provident quaerat sed corrupti
-                laboriosam voluptates distinctio a! Deleniti?</p>
-            <div class="article-box">
-                <img src="./assets/img/blog1.jpg" alt="imagemblog1">
-                <h4><a href="#">Aticle title</a></h4>
-                <p class="article-date">05 de Fevereiro de 2021 | 40 comentários</p>
-                <p class="article-resume">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iure eveniet accusantium sit velit voluptatum eum sunt tenetur.</p>
-                <a href="#" class="article-btn light-btn"> Ler post</a>
-            </div>
-            <div class="article-box">
-                <img src="./assets/img/blog2.jpg" alt="imagemblog1">
-                <h4><a href="#">Aticle title</a></h4>
-                <p class="article-date">11 de Outubro de 2022 | 100 comentários</p>
-                <p class="article-resume">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iure eveniet accusantium sit velit voluptatum eum sunt tenetur.</p>
-                <a href="#" class="article-btn light-btn"> Ler post</a>
-            </div>
-            <div class="article-box">
-                <img src="./assets/img/blog3.jpg" alt="imagemblog1">
-                <h4><a href="#">Aticle title</a></h4>
-                <p class="article-date">18 de Abril de 2023 | 20 comentários</p>
-                <p class="article-resume">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iure eveniet accusantium sit velit voluptatum eum sunt tenetur.</p>
-                <a href="#" class="article-btn light-btn"> Ler post</a>
-            </div>
-        </section>
         <footer>
             <div class="wrapper">
                 <div class="footer-box">
                     <div class="company-footer">
-                        <img src="./assets/img/logo.png" alt="logofooter">
+                        <img src="/assets/img/logo.png" alt="logofooter">
                         <h2 class="h2-footer">Jobfinder</h2>
                         <p>A maneira mais facil de encontrar seu proximo emprego</p>
                     </div>
